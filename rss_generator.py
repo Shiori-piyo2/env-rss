@@ -39,10 +39,13 @@ def get_soup(url):
         headers=HEADERS,
         timeout=30
     )
+    
     response.raise_for_status()
-    response.encoding = response.apparent_encoding
-
-    return BeautifulSoup(response.text, "html.parser")
+    
+    return BeautifulSoup(
+response.content,
+"html.parser"
+)
 
 
 def is_press_article(url):
