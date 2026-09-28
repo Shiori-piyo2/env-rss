@@ -1,46 +1,52 @@
 import requests
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
+from urllib.parse import urljoin
 
-# 環境省 報道発表一覧
-URL = "https://www.env.go.jp/press/"
+BASE_URL = "https://www.env.go.jp"
+PRESS_URL = "https://www.env.go.jp/press/"
 
 # ページ取得
-response = requests.get(URL)
+response = requests.get(PRESS_URL, timeout=30)
+response.raise_for_status()
 response.encoding = response.apparent_encoding
 
-# HTML解析
 soup = BeautifulSoup(response.text, "html.parser")
 
 # RSS作成
 fg = FeedGenerator()
 fg.title("環境省 報道発表")
-fg.link(href=URL)
-fg.description("環境省報道発表のRSS")
+fg.link(href=PRESS_URL)
+fg.description("環境省 報道発表 RSS")
 
-# リンク取得
-links = soup.find_all("a")
+# 重複防止
+added = set()
 
-count = 0
+# 報道発表一覧のリンク候補を収集
+for a in soup.find_all("a", href=True):
 
-for link in links:
-    href = link.get("href")
-    title = link.get_text(strip=True)
+    href = a["href"]
+    title = a.get_text(strip=True)
 
-    if href and title:
-        if href.startswith("/"):
-            href = "https://www.env.go.jp" + href
+    if not title:
+        continue
 
-        fe = fg.add_entry()
-        fe.title(title)
-        fe.link(href=href)
+    # 報道発表記事らしいURLだけ採用
+    if "/press/" not in href:
+        continue
 
-        count += 1
+    url = urljoin(BASE_URL, href)
 
-        if count >= 20:
-            break
+    if url in added:
+        continue
 
-# RSS保存
+    added.add(url)
+
+    fe = fg.add_entry()
+    fe.title(title)
+    fe.link(href=url)
+
+# feed.xml出力
 fg.rss_file("feed.xml")
 
-print("RSS作成完了")
+print(f"{len(added)} 件の報道発表を登録しました")
