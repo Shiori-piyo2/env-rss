@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>env-rss</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 30 Sep 2026 09:01:26 +0900</lastBuildDate>
-    <item>
-      <title>「生態系被害防止外来種リスト（2026年改訂版）」の公表について</title>
-      <link>https://www.env.go.jp/press/press_05557.html</link>
-      <description>分野：大臣官房 / 発表日：2026年09月11日</description>
-      <guid isPermaLink="false">https://www.env.go.jp/press/press_05557.html</guid>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 +0900</pubDate>
-    </item>
+    <lastBuildDate>Wed, 30 Sep 2026 15:13:28 +0900</lastBuildDate>
     <item>
       <title>第２回クビアカツヤカミキリ対策本部の開催について</title>
       <link>https://www.env.go.jp/press/press_05558.html</link>
@@ -357,6 +350,13 @@
       <description>分野：大臣官房 / 発表日：2026年09月29日</description>
       <guid isPermaLink="false">https://www.env.go.jp/press/press_05637.html</guid>
       <pubDate>Tue, 29 Sep 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>建設リサイクル法に係る全国一斉パトロールの実施 ～現場における適切な分別解体、再資源化の徹底に向けて～</title>
+      <link>https://www.env.go.jp/press/press_05630.html</link>
+      <description>分野：大臣官房 / 発表日：2026年09月30日</description>
+      <guid isPermaLink="false">https://www.env.go.jp/press/press_05630.html</guid>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0900</pubDate>
     </item>
   </channel>
 </rss>
