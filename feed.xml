@@ -7,14 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>env-rss</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 22 Oct 2026 09:09:28 +0900</lastBuildDate>
-    <item>
-      <title>オンラインセミナー「ネイチャーポジティブの実現に向けた地域金融機関の取組」の開催について</title>
-      <link>https://www.env.go.jp/press/press_05647.html</link>
-      <description>分野：大臣官房 / 発表日：2026年10月09日</description>
-      <guid isPermaLink="false">https://www.env.go.jp/press/press_05647.html</guid>
-      <pubDate>Fri, 09 Oct 2026 00:00:00 +0900</pubDate>
-    </item>
+    <lastBuildDate>Thu, 22 Oct 2026 15:28:57 +0900</lastBuildDate>
     <item>
       <title>第８回チーム新・湯治全国大会の開催について</title>
       <link>https://www.env.go.jp/press/press_05655.html</link>
@@ -357,6 +350,13 @@
       <description>分野：大臣官房 / 発表日：2026年10月21日</description>
       <guid isPermaLink="false">https://www.env.go.jp/press/111118_00065.html</guid>
       <pubDate>Wed, 21 Oct 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>石狩湾新港におけるアカカミアリの確認について</title>
+      <link>https://www.env.go.jp/press/press_05781.html</link>
+      <description>分野：大臣官房 / 発表日：2026年10月22日</description>
+      <guid isPermaLink="false">https://www.env.go.jp/press/press_05781.html</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0900</pubDate>
     </item>
   </channel>
 </rss>
